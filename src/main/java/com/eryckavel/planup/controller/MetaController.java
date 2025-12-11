@@ -4,6 +4,7 @@ import com.eryckavel.planup.dto.request.custom.AtualizarMetaRequestDTO;
 import com.eryckavel.planup.dto.request.custom.CadastrarMetaRequestDTO;
 import com.eryckavel.planup.dto.response.model.MetaResponseDTO;
 import com.eryckavel.planup.service.MetaService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -13,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/meta")
+@Tag(name = "Meta")
 public class MetaController {
 
     private final MetaService service;

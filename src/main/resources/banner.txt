@@ -1,0 +1,11 @@
+${AnsiColor.BRIGHT_CYAN}
+ ██████╗ ██╗      █████╗ ███╗   ██╗    ██╗   ██╗██████╗
+ ██╔══██╗██║     ██╔══██╗████╗  ██║    ██║   ██║██╔══██╗
+ ██████╔╝██║     ███████║██╔██╗ ██║    ██║   ██║██████╔╝
+ ██╔═══╝ ██║     ██╔══██║██║╚██╗██║    ██║   ██║██╔═══╝
+ ██║     ███████╗██║  ██║██║ ╚████║    ╚██████╔╝██║
+ ╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝     ╚═════╝ ╚═╝
+${AnsiColor.BRIGHT_BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${AnsiColor.DEFAULT}
+${AnsiColor.BRIGHT_WHITE}    API de Gerenciamento de Metas Financeiras${AnsiColor.DEFAULT}
+${AnsiColor.BRIGHT_YELLOW}       Version: ${api.version}${AnsiColor.WHITE} | Spring Boot ${spring-boot.version}${AnsiColor.DEFAULT}
+${AnsiColor.BRIGHT_BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${AnsiColor.DEFAULT}

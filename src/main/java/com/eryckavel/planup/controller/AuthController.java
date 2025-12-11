@@ -4,6 +4,7 @@ import com.eryckavel.planup.dto.request.custom.CadastrarUsuarioResponseDTO;
 import com.eryckavel.planup.dto.request.custom.LoginRequestDTO;
 import com.eryckavel.planup.dto.response.custom.LoginResponseDTO;
 import com.eryckavel.planup.service.AuthService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/auth")
+@Tag(name = "Auth")
 public class AuthController {
 
     private final AuthService service;

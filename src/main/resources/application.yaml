@@ -45,5 +45,20 @@ api:
   version: @project.version@
 
 jwt:
-  secret: "aa77458a29d888216981c9b930b64540e4782593edc32886575aefad95fdaa92"
+  secret: ${HASH_JWT}
   expiration: 60
+
+springdoc:
+  api-docs:
+    path: /api-docs
+    enabled: true
+  swagger-ui:
+    path: /docs
+    enabled: true
+    layout: StandaloneLayout
+    operationsSorter: method
+    tagsSorter: alpha
+    disable-swagger-default-url: true
+    display-request-duration: true
+    docExpansion: none
+    tryItOutEnabled: true
