@@ -1,0 +1,49 @@
+server:
+  port: 9292
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: PlanUp
+
+  output:
+    ansi:
+      enabled: ALWAYS
+
+  datasource:
+    url: ${DB_URL:url}
+    username: ${DB_USERNAME:username}
+    password: ${DB_PASSWORD:password}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+    validate-on-migrate: true
+    clean-disabled: true
+    out-of-order: false
+
+logging:
+  level:
+    org.flywaydb.core: OFF
+    org.hibernate.orm.connections.pooling: OFF
+  pattern:
+    console: "%clr(%d{dd/MM/yyyy HH:mm:ss.SSS}){blue} %clr([%1.15t]){magenta} - %clr(%-5level){highlight} - %clr([%-30.30logger{29}]){cyan} %clr(→){white} %clr(%msg){yellow}%n%clr(%ex){red bold}"
+
+api:
+  version: @project.version@
+
+jwt:
+  secret: "aa77458a29d888216981c9b930b64540e4782593edc32886575aefad95fdaa92"
+  expiration: 60
