@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 @Tag(name = "Montante")
 public class MontanteController {
 
-    private MontanteService service;
+    private final MontanteService service;
 
     public MontanteController(MontanteService service) {
         this.service = service;
